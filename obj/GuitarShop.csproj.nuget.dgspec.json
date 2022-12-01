@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/djcpu/Downloads/Ch08Ex1GuitarShop/GuitarShop/GuitarShop.csproj": {}
+    "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj": {}
   },
   "projects": {
-    "/Users/djcpu/Downloads/Ch08Ex1GuitarShop/GuitarShop/GuitarShop.csproj": {
+    "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop/GuitarShop/GuitarShop.csproj",
+        "projectUniqueName": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj",
         "projectName": "GuitarShop",
-        "projectPath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop/GuitarShop/GuitarShop.csproj",
+        "projectPath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj",
         "packagesPath": "/Users/djcpu/.nuget/packages/",
-        "outputPath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop/GuitarShop/obj/",
+        "outputPath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/djcpu/.nuget/NuGet/NuGet.Config"

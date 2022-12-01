@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHQkWnQpBZtWMuFDegKHptDCRylHUS+uvGTwvKllylwBzWnUDHEDICwaLkCU3B3eHRB0Kubq772La1SpidMPwg==",
+  "dgSpecHash": "E3jotjrex3r+efhKcQ6ts51jwDc3RPNBc7sDa/URmOPrNxCaOOKu2MhCm24YichKBls94exQfVc/b34BuW9wzw==",
   "success": true,
-  "projectFilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop/GuitarShop/GuitarShop.csproj",
+  "projectFilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj",
   "expectedPackageFiles": [
     "/Users/djcpu/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/djcpu/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
