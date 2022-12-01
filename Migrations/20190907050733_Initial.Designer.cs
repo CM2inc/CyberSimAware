@@ -16,7 +16,7 @@ namespace GuitarShop.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.0.0-preview3.19153.1")
+                .HasAnnotation("NftVersion", "3.0.0-preview3.19153.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -51,9 +51,9 @@ namespace GuitarShop.Migrations
                         });
                 });
 
-            modelBuilder.Entity("GuitarShop.Models.Product", b =>
+            modelBuilder.Entity("GuitarShop.Models.Nft", b =>
                 {
-                    b.Property<int>("ProductID")
+                    b.Property<int>("NftID")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -68,16 +68,16 @@ namespace GuitarShop.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("ProductID");
+                    b.HasKey("NftID");
 
                     b.HasIndex("CategoryID");
 
-                    b.ToTable("Products");
+                    b.ToTable("Nfts");
 
                     b.HasData(
                         new
                         {
-                            ProductID = 1,
+                            NftID = 1,
                             CategoryID = 1,
                             Code = "strat",
                             Name = "Fender Stratocaster",
@@ -85,7 +85,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 2,
+                            NftID = 2,
                             CategoryID = 1,
                             Code = "les_paul",
                             Name = "Gibson Les Paul",
@@ -93,7 +93,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 3,
+                            NftID = 3,
                             CategoryID = 1,
                             Code = "sg",
                             Name = "Gibson SG",
@@ -101,7 +101,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 4,
+                            NftID = 4,
                             CategoryID = 1,
                             Code = "fg700s",
                             Name = "Yamaha FG700S",
@@ -109,7 +109,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 5,
+                            NftID = 5,
                             CategoryID = 1,
                             Code = "washburn",
                             Name = "Washburn D10S",
@@ -117,7 +117,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 6,
+                            NftID = 6,
                             CategoryID = 1,
                             Code = "rodriguez",
                             Name = "Rodriguez Caballero 11",
@@ -125,7 +125,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 7,
+                            NftID = 7,
                             CategoryID = 2,
                             Code = "precision",
                             Name = "Fender Precision",
@@ -133,7 +133,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 8,
+                            NftID = 8,
                             CategoryID = 2,
                             Code = "hofner",
                             Name = "Hofner Icon",
@@ -141,7 +141,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 9,
+                            NftID = 9,
                             CategoryID = 3,
                             Code = "ludwig",
                             Name = "Ludwig 5-piece Drum Set with Cymbals",
@@ -149,7 +149,7 @@ namespace GuitarShop.Migrations
                         },
                         new
                         {
-                            ProductID = 10,
+                            NftID = 10,
                             CategoryID = 3,
                             Code = "tama",
                             Name = "Tama 5-Piece Drum Set with Cymbals",
@@ -157,7 +157,7 @@ namespace GuitarShop.Migrations
                         });
                 });
 
-            modelBuilder.Entity("GuitarShop.Models.Product", b =>
+            modelBuilder.Entity("GuitarShop.Models.Nft", b =>
                 {
                     b.HasOne("GuitarShop.Models.Category", "Category")
                         .WithMany()

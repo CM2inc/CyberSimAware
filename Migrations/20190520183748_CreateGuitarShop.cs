@@ -21,10 +21,10 @@ namespace GuitarShop.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Products",
+                name: "Nfts",
                 columns: table => new
                 {
-                    ProductID = table.Column<int>(nullable: false)
+                    NftID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     CategoryID = table.Column<int>(nullable: false),
                     Code = table.Column<string>(nullable: false),
@@ -33,9 +33,9 @@ namespace GuitarShop.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Products", x => x.ProductID);
+                    table.PrimaryKey("PK_Nfts", x => x.NftID);
                     table.ForeignKey(
-                        name: "FK_Products_Categories_CategoryID",
+                        name: "FK_Nfts_Categories_CategoryID",
                         column: x => x.CategoryID,
                         principalTable: "Categories",
                         principalColumn: "CategoryID",
@@ -58,8 +58,8 @@ namespace GuitarShop.Migrations
                 values: new object[] { 3, "Drums" });
 
             migrationBuilder.InsertData(
-                table: "Products",
-                columns: new[] { "ProductID", "CategoryID", "Code", "Name", "Price" },
+                table: "Nfts",
+                columns: new[] { "NftID", "CategoryID", "Code", "Name", "Price" },
                 values: new object[,]
                 {
                     { 1, 1, "strat", "Fender Stratocaster", 699m },
@@ -75,15 +75,15 @@ namespace GuitarShop.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_CategoryID",
-                table: "Products",
+                name: "IX_Nfts_CategoryID",
+                table: "Nfts",
                 column: "CategoryID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "Nfts");
 
             migrationBuilder.DropTable(
                 name: "Categories");

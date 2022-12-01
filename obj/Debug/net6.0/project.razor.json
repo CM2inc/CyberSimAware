@@ -16298,8 +16298,8 @@
   "RootNamespace": "GuitarShop",
   "Documents": [
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Product/Details.cshtml",
-      "TargetPath": "Views\\Product\\Details.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Nft/Details.cshtml",
+      "TargetPath": "Views\\Nft\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16318,8 +16318,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Product/AddUpdate.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\AddUpdate.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/AddUpdate.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Nft\\AddUpdate.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16368,18 +16368,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Product/List.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/List.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Nft\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Product/Delete.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\Delete.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Nft\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Product/List.cshtml",
-      "TargetPath": "Views\\Product\\List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Nft/List.cshtml",
+      "TargetPath": "Views\\Nft\\List.cshtml",
       "FileKind": "mvc"
     },
     {

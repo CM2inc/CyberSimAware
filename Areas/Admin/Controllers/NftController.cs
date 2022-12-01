@@ -7,12 +7,12 @@ using GuitarShop.Models;
 namespace GuitarShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class ProductController : Controller
+    public class NftController : Controller
     {
         private ShopContext context;
         private List<Category> categories;
 
-        public ProductController(ShopContext ctx)
+        public NftController(ShopContext ctx)
         {
             context = ctx;
             categories = context.Categories
@@ -28,17 +28,17 @@ namespace GuitarShop.Areas.Admin.Controllers
         [Route("[area]/[controller]s/{id?}")]
         public IActionResult List(string id = "All")
         {
-            List<Product> products;
+            List<Nft> nfts;
             if (id == "All")
             {
-                products = context.Products
-                    .OrderBy(p => p.ProductID).ToList();
+                nfts = context.Nfts
+                    .OrderBy(p => p.NftID).ToList();
             }
             else
             {
-                products = context.Products
+                nfts = context.Nfts
                     .Where(p => p.Category.Name == id)
-                    .OrderBy(p => p.ProductID).ToList();
+                    .OrderBy(p => p.NftID).ToList();
             }
 
             /*
@@ -48,63 +48,63 @@ namespace GuitarShop.Areas.Admin.Controllers
             */
 
             //~~populated the view model
-            var model = new ProductListViewModel
+            var model = new NftListViewModel
             {
                 Categories = categories,
-                Products = products,
+                Nfts = nfts,
                 SelectedCategory = id
             };
 
-            // bind products to view
+            // bind nfts to view
             return View(model);
         }
 
         [HttpGet]
         public IActionResult Add()
         {
-            // create new Product object
-            Product product = new Product();                // create Product object
-            product.Category = context.Categories.Find(1);  // add Category object - prevents validation problem
+            // create new Nft object
+            Nft nft = new Nft();                // create Nft object
+            nft.Category = context.Categories.Find(1);  // add Category object - prevents validation problem
 
             // use ViewBag to pass action and category data to view
             ViewBag.Action = "Add";
             ViewBag.Categories = categories;
 
-            // bind product to AddUpdate view
-            return View("AddUpdate", product);
+            // bind nft to AddUpdate view
+            return View("AddUpdate", nft);
         }
 
         [HttpGet]
         public IActionResult Update(int id)
         {
-            // get Product object for specified primary key
-            Product product = context.Products
+            // get Nft object for specified primary key
+            Nft nft = context.Nfts
                 .Include(p => p.Category)
-                .FirstOrDefault(p => p.ProductID == id);
+                .FirstOrDefault(p => p.NftID == id);
 
             // use ViewBag to pass action and category data to view
             ViewBag.Action = "Update";
             ViewBag.Categories = categories;
 
-            // bind product to AddUpdate view
-            return View("AddUpdate", product);
+            // bind nft to AddUpdate view
+            return View("AddUpdate", nft);
         }
 
         [HttpPost]
-        public IActionResult Update(Product product)
+        public IActionResult Update(Nft nft)
         {
             if (ModelState.IsValid)
             {
-                if (product.ProductID == 0)           // new product
+                if (nft.NftID == 0)           // new nft
                 {
-                    context.Products.Add(product);
-                    TempData["UserMessage"] = "you just added the product " + product.Name;
-                    //TempData["you just added the project " + product] = "UserMessage";
+                    context.Nfts.Add(nft);
+                    TempData["UserMessage"] = "you just added the nft " + nft.Name;
+                    //TempData["you just added the project " + nft] = "UserMessage";
                 }
-                else                                  // existing product
+                else                                  // existing nft
                 {
-                    context.Products.Update(product);
-                    TempData["UserMessage"] = "you just updated the product " + product.Name;
+                    context.Nfts.Update(nft);
+                    TempData["UserMessage"] = "you just updated the nft " + nft.Name;
                 }
                 context.SaveChanges();
                 return RedirectToAction("List");
@@ -113,22 +113,22 @@ namespace GuitarShop.Areas.Admin.Controllers
             {
                 ViewBag.Action = "Save";
                 ViewBag.Categories = categories;
-                return View("AddUpdate", product);
+                return View("AddUpdate", nft);
             }
         }
 
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            Product product = context.Products
-                .FirstOrDefault(p => p.ProductID == id);
-            return View(product);
+            Nft nft = context.Nfts
+                .FirstOrDefault(p => p.NftID == id);
+            return View(nft);
         }
 
         [HttpPost]
-        public IActionResult Delete(Product product)
+        public IActionResult Delete(Nft nft)
         {
-            context.Products.Remove(product);
+            context.Nfts.Remove(nft);
             context.SaveChanges();
             return RedirectToAction("List");
         }

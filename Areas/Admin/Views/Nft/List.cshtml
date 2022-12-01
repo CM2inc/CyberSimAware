@@ -1,7 +1,7 @@
 ﻿@*Cepada Morgan List/Razor view*@
-@model ProductListViewModel
+@model NftListViewModel
 @{
-    ViewBag.Title = "Product Manager";
+    ViewBag.Title = "Nft Manager";
 }
 
 <h1>@ViewBag.Title</h1>
@@ -34,18 +34,18 @@
                     <th></th>
             </thead>
             <tbody>
-                @foreach (var p in Model.Products)
+                @foreach (var p in Model.Nfts)
                 {
                     <tr>
                         <td>@p.Name</td>
                         <td>@p.Price.ToString("C")</td>
                         <td>
                             <a asp-action="Update"
-                               asp-route-id="@p.ProductID">Update</a>
+                               asp-route-id="@p.NftID">Update</a>
                         </td>
                         <td>
                             <a asp-action="Delete"
-                               asp-route-id="@p.ProductID">Delete</a>
+                               asp-route-id="@p.NftID">Delete</a>
                         </td>
                     </tr>
                 }

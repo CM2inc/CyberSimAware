@@ -5,18 +5,18 @@ using GuitarShop.Models;
 
 namespace GuitarShop.Controllers
 {
-    public class ProductController : Controller
+    public class NftController : Controller
     {
         private ShopContext context;
 
-        public ProductController(ShopContext ctx)
+        public NftController(ShopContext ctx)
         {
             context = ctx;
         }
 
         public IActionResult Index()
         {
-            return RedirectToAction("List", "Product");
+            return RedirectToAction("List", "Nft");
         }
 
         [Route("[controller]s/{id?}")]
@@ -25,17 +25,17 @@ namespace GuitarShop.Controllers
             var categories = context.Categories
                 .OrderBy(c => c.CategoryID).ToList();
 
-            List<Product> products;
+            List<Nft> nfts;
             if (id == "All")
             {
-                products = context.Products
-                    .OrderBy(p => p.ProductID).ToList();
+                nfts = context.Nfts
+                    .OrderBy(p => p.NftID).ToList();
             }
             else
             {
-                products = context.Products
+                nfts = context.Nfts
                     .Where(p => p.Category.Name == id)
-                    .OrderBy(p => p.ProductID).ToList();
+                    .OrderBy(p => p.NftID).ToList();
             }
 
             // use ViewBag to pass data to view
@@ -45,14 +45,14 @@ namespace GuitarShop.Controllers
             */
 
             //~~populated the view model
-            var model = new ProductListViewModel
+            var model = new NftListViewModel
             {
                 Categories = categories,
-                Products = products,
+                Nfts = nfts,
                 SelectedCategory = id
             };
 
-            // bind products to view
+            // bind nfts to view
             return View(model);
         }
 
@@ -61,16 +61,16 @@ namespace GuitarShop.Controllers
             var categories = context.Categories
                 .OrderBy(c => c.CategoryID).ToList();
 
-            Product product = context.Products.Find(id);
+            Nft nft = context.Nfts.Find(id);
 
-            string imageFilename = product.Code + "_m.png";
+            string imageFilename = nft.Code + "_m.png";
 
             // use ViewBag to pass data to view
             ViewBag.Categories = categories;
             ViewBag.ImageFilename = imageFilename;
 
-            // bind product to view
-            return View(product);
+            // bind nft to view
+            return View(nft);
         }
     }
 }
