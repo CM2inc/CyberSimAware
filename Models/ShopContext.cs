@@ -18,9 +18,9 @@ namespace GuitarShop.Models
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Category>().HasData(
-                new Category { CategoryID = 1, Name = "Guitars" },
-                new Category { CategoryID = 2, Name = "Basses" },
-                new Category { CategoryID = 3, Name = "Drums" }
+                new Category { CategoryID = 1, Name = "Crypto Punks" },
+                new Category { CategoryID = 2, Name = "Bored Apes" },
+                new Category { CategoryID = 3, Name = "CloneX" }
             );
 
             modelBuilder.Entity<Nft>().HasData(
@@ -28,81 +28,73 @@ namespace GuitarShop.Models
                 {
                     NftID = 1, 
                     CategoryID = 1,
-                    Code = "strat",
-                    Name = "Fender Stratocaster",
-                    Price = (decimal)699.00
+                    Code = "1190",
+                    Name = "CryptoPunk #1190",
+                    Price = (decimal)400.00
                 },
                 new Nft
                 {
                     NftID = 2,
                     CategoryID = 1,
-                    Code = "les_paul",
-                    Name = "Gibson Les Paul",
-                    Price = (decimal)1199.00
+                    Code = "5217",
+                    Name = "CryptoPunk #5217",
+                    Price = (decimal)2250.00
                 },
                 new Nft
                 {
                     NftID = 3,
                     CategoryID = 1,
-                    Code = "sg",
-                    Name = "Gibson SG",
-                    Price = (decimal)2517.00
+                    Code = "635",
+                    Name = "CryptoPunk #7804",
+                    Price = (decimal)4200.00
                 },
                 new Nft
                 {
                     NftID = 4,
-                    CategoryID = 1,
-                    Code = "fg700s",
-                    Name = "Yamaha FG700S",
-                    Price = (decimal)489.99
+                    CategoryID = 2,
+                    Code = "550",
+                    Name = "#550",
+                    Price = (decimal)185.00
                 },
                 new Nft
                 {
                     NftID = 5,
-                    CategoryID = 1,
-                    Code = "washburn",
-                    Name = "Washburn D10S",
-                    Price = (decimal)299.00
+                    CategoryID = 2,
+                    Code = "3439",
+                    Name = "#3439",
+                    Price = (decimal)1499.00
                 },
                 new Nft
                 {
                     NftID = 6,
-                    CategoryID = 1,
-                    Code = "rodriguez",
-                    Name = "Rodriguez Caballero 11",
-                    Price = (decimal)415.00
+                    CategoryID = 2,
+                    Code = "2488",
+                    Name = "#2488",
+                    Price = (decimal)189.69
                 },
                 new Nft
                 {
                     NftID = 7,
-                    CategoryID = 2,
-                    Code = "precision",
-                    Name = "Fender Precision",
-                    Price = (decimal)799.99
+                    CategoryID = 3,
+                    Code = "5549",
+                    Name = "CloneX #5549",
+                    Price = (decimal)33.33
                 },
                 new Nft
                 {
                     NftID = 8,
-                    CategoryID = 2,
-                    Code = "hofner",
-                    Name = "Hofner Icon",
-                    Price = (decimal)499.99
+                    CategoryID = 3,
+                    Code = "1677",
+                    Name = "CloneX #1677",
+                    Price = (decimal)49.00
                 },
                 new Nft
                 {
                     NftID = 9,
                     CategoryID = 3,
-                    Code = "ludwig",
-                    Name = "Ludwig 5-piece Drum Set with Cymbals",
-                    Price = (decimal)699.99
-                },
-                new Nft
-                {
-                    NftID = 10,
-                    CategoryID = 3,
-                    Code = "tama",
-                    Name = "Tama 5-Piece Drum Set with Cymbals",
-                    Price = (decimal)799.99
+                    Code = "14433",
+                    Name = "CloneX #14433",
+                    Price = (decimal)138
                 }
             );
         }
