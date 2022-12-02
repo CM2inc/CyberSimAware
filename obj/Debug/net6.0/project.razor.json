@@ -16318,18 +16318,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/AddUpdate.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Nft\\AddUpdate.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Cart/Index.cshtml",
-      "TargetPath": "Views\\Cart\\Index.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Nft/List.cshtml",
+      "TargetPath": "Views\\Nft\\List.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Shared/_AdminLayout.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/List.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Nft\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Nft\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16358,8 +16363,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Cart/Add.cshtml",
-      "TargetPath": "Views\\Cart\\Add.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/AddUpdate.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Nft\\AddUpdate.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16368,18 +16373,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/List.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Nft\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Areas/Admin/Views/Nft/Delete.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Nft\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Nft/List.cshtml",
-      "TargetPath": "Views\\Nft\\List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/Views/Home/AboutMe.cshtml",
+      "TargetPath": "Views\\Home\\AboutMe.cshtml",
       "FileKind": "mvc"
     },
     {

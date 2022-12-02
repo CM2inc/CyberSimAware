@@ -30,7 +30,7 @@ namespace GuitarShop.Models
                     CategoryID = 1,
                     Code = "1190",
                     Name = "CryptoPunk #1190",
-                    Price = (decimal)400.00
+                    Price = (decimal)516796.00
                 },
                 new Nft
                 {
@@ -38,15 +38,15 @@ namespace GuitarShop.Models
                     CategoryID = 1,
                     Code = "5217",
                     Name = "CryptoPunk #5217",
-                    Price = (decimal)2250.00
+                    Price = (decimal)2906977.50
                 },
                 new Nft
                 {
                     NftID = 3,
                     CategoryID = 1,
-                    Code = "635",
+                    Code = "7804",
                     Name = "CryptoPunk #7804",
-                    Price = (decimal)4200.00
+                    Price = (decimal)5426358.00
                 },
                 new Nft
                 {
@@ -54,7 +54,7 @@ namespace GuitarShop.Models
                     CategoryID = 2,
                     Code = "550",
                     Name = "#550",
-                    Price = (decimal)185.00
+                    Price = (decimal)239018.15
                 },
                 new Nft
                 {
@@ -62,7 +62,7 @@ namespace GuitarShop.Models
                     CategoryID = 2,
                     Code = "3439",
                     Name = "#3439",
-                    Price = (decimal)1499.00
+                    Price = (decimal)1936693.01
                 },
                 new Nft
                 {
@@ -70,7 +70,7 @@ namespace GuitarShop.Models
                     CategoryID = 2,
                     Code = "2488",
                     Name = "#2488",
-                    Price = (decimal)189.69
+                    Price = (decimal)245077.58
                 },
                 new Nft
                 {
@@ -78,7 +78,7 @@ namespace GuitarShop.Models
                     CategoryID = 3,
                     Code = "5549",
                     Name = "CloneX #5549",
-                    Price = (decimal)33.33
+                    Price = (decimal)43062.03
                 },
                 new Nft
                 {
@@ -86,7 +86,7 @@ namespace GuitarShop.Models
                     CategoryID = 3,
                     Code = "1677",
                     Name = "CloneX #1677",
-                    Price = (decimal)49.00
+                    Price = (decimal)63307.51
                 },
                 new Nft
                 {
@@ -94,7 +94,7 @@ namespace GuitarShop.Models
                     CategoryID = 3,
                     Code = "14433",
                     Name = "CloneX #14433",
-                    Price = (decimal)138
+                    Price = (decimal)178294.62
                 }
             );
         }

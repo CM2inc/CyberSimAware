@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GuitarShop.Migrations
 {
-    public partial class CreateGuitarShop : Migration
+    public partial class CreateNftTracker : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,33 +45,32 @@ namespace GuitarShop.Migrations
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { 1, "Guitars" });
+                values: new object[] { 1, "Crypto Punks" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { 2, "Basses" });
+                values: new object[] { 2, "Bored Apes" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { 3, "Drums" });
+                values: new object[] { 3, "CloneX" });
 
             migrationBuilder.InsertData(
                 table: "Nfts",
                 columns: new[] { "NftID", "CategoryID", "Code", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 1, 1, "strat", "Fender Stratocaster", 699m },
-                    { 2, 1, "les_paul", "Gibson Les Paul", 1199m },
-                    { 3, 1, "sg", "Gibson SG", 2517m },
-                    { 4, 1, "fg700s", "Yamaha FG700S", 489.99m },
-                    { 5, 1, "washburn", "Washburn D10S", 299m },
-                    { 6, 1, "rodriguez", "Rodriguez Caballero 11", 415m },
-                    { 7, 2, "precision", "Fender Precision", 799.99m },
-                    { 8, 2, "hofner", "Hofner Icon", 499.99m },
-                    { 9, 3, "ludwig", "Ludwig 5-piece Drum Set with Cymbals", 699.99m },
-                    { 10, 3, "tama", "Tama 5-Piece Drum Set with Cymbals", 799.99m }
+                    { 1, 1, "1190", "CryptoPunk #1190", 516796.00m },
+                    { 2, 1, "5217", "CryptoPunk #5217", 2906977.50m },
+                    { 3, 1, "7804", "CryptoPunk #7804", 5426358.00m },
+                    { 4, 2, "550", "#550", 239018.15m },
+                    { 5, 2, "3439", "#3439", 1936693.01m },
+                    { 6, 2, "2488", "#2488", 245077.58m },
+                    { 7, 3, "5549", "CloneX #5549", 43062.03m },
+                    { 8, 3, "1677", "CloneX #1677", 63307.51m },
+                    { 9, 3, "14433", "CloneX #14433", 178294.62m },
                 });
 
             migrationBuilder.CreateIndex(

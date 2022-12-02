@@ -63,7 +63,7 @@ namespace GuitarShop.Controllers
 
             Nft nft = context.Nfts.Find(id);
 
-            string imageFilename = nft.Code + "_m.png";
+            string imageFilename = nft.Code + "s.png";
 
             // use ViewBag to pass data to view
             ViewBag.Categories = categories;

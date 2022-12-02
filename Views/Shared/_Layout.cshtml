@@ -37,7 +37,11 @@
                        asp-controller="Nft" asp-action="List">NFTs</a>
                     <a class="nav-link
                         @(controller == "Home" && action == "About" ? "active" : "")"
-                       asp-controller="Home" asp-action="About">About</a>
+                       asp-controller="Home" asp-action="About">About NFTs</a>
+                    <a class="nav-link
+                        @(controller == "Home" && action == "AboutMe" ? "active" : "")"
+                        asp-controller="Home" asp-action="AboutMe">About Me</a>
+                    
                 </div>
                 <div class="navbar-nav navbar-right">
                     <a class="nav-link"
