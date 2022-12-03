@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using GuitarShop.Models;
+using NftTracker.Models;
 
-namespace GuitarShop.Areas.Admin.Controllers
+namespace NftTracker.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class CategoryController : Controller

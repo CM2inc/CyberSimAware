@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/djcpu/Downloads/NftTracker/GuitarShop.csproj",
+  "FilePath": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "GuitarShop",
+  "RootNamespace": "NftTracker",
   "Documents": [
     {
       "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/_ViewImports.cshtml",

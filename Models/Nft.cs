@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace GuitarShop.Models
+namespace NftTracker.Models
 {
     public class Nft
     {

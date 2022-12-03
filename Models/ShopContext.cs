@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace GuitarShop.Models
+namespace NftTracker.Models
 {
     public class ShopContext : DbContext
     {

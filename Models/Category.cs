@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GuitarShop.Models
+namespace NftTracker.Models
 {
     public class Category
     {

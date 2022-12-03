@@ -3,7 +3,7 @@ using System;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Collections.Generic;
 
-namespace GuitarShop.Models
+namespace NftTracker.Models
 {
     public class NftListViewModel
     {

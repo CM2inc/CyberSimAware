@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace GuitarShop.Areas.Admin.Controllers
+namespace NftTracker.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class HomeController : Controller

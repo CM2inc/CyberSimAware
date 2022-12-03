@@ -2,9 +2,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using GuitarShop.Models;
+using NftTracker.Models;
 
-namespace GuitarShop
+namespace NftTracker
 {
     public class Startup
     {

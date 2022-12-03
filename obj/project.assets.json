@@ -9923,11 +9923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj",
-      "projectName": "GuitarShop",
-      "projectPath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/GuitarShop.csproj",
+      "projectUniqueName": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
+      "projectName": "NftTracker",
+      "projectPath": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
       "packagesPath": "/Users/djcpu/.nuget/packages/",
-      "outputPath": "/Users/djcpu/Downloads/Ch08Ex1GuitarShop copy/GuitarShop/obj/",
+      "outputPath": "/Users/djcpu/Downloads/NftTracker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/djcpu/.nuget/NuGet/NuGet.Config"

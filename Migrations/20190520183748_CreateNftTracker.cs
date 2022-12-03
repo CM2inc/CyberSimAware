@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace GuitarShop.Migrations
+namespace NftTracker.Migrations
 {
     public partial class CreateNftTracker : Migration
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using GuitarShop.Models;
+using NftTracker.Models;
 
-namespace GuitarShop.Controllers
+namespace NftTracker.Controllers
 {
     public class NftController : Controller
     {
