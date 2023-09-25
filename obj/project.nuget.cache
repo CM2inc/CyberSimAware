@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "65x+SB/ZzgHSbw9E9qe/F3aoIt/fkv52oeZOxGg5GBEGdHH/bQznS+iXWZgsP6YNRJbBwO+0odtBzbxBN3YKKg==",
+  "dgSpecHash": "zmuAZqfU1SCJUIWhcosnjSiKhbJFjSYyqOwo+wzs/MNRGm+boBCSihL9vTpEJ5Jdp6aAc2cSW5POJ4m09ktw6Q==",
   "success": true,
-  "projectFilePath": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
+  "projectFilePath": "/Users/djcpu/CyberSimAware/CyberSimAware/CyberSimAware.csproj",
   "expectedPackageFiles": [
     "/Users/djcpu/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/djcpu/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",

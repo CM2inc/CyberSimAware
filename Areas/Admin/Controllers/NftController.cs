@@ -2,9 +2,9 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NftTracker.Models;
+using CyberSimAware.Models;
 
-namespace NftTracker.Areas.Admin.Controllers
+namespace CyberSimAware.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class NftController : Controller

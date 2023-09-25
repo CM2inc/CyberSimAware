@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace NftTracker.Migrations
+namespace CyberSimAware.Migrations
 {
-    public partial class CreateNftTracker : Migration
+    public partial class CreateCyberSimAware : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

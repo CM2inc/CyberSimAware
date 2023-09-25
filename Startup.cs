@@ -2,9 +2,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using NftTracker.Models;
+using CyberSimAware.Models;
 
-namespace NftTracker
+namespace CyberSimAware
 {
     public class Startup
     {

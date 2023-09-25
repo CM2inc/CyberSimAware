@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "NftTracker/1.0.0": {
+      "CyberSimAware/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11",
@@ -15,7 +15,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.10"
         },
         "runtime": {
-          "NftTracker.dll": {}
+          "CyberSimAware.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2245,7 +2245,7 @@
     }
   },
   "libraries": {
-    "NftTracker/1.0.0": {
+    "CyberSimAware/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

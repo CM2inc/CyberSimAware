@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace NftTracker.Models
+namespace CyberSimAware.Models
 {
     public class Category
     {

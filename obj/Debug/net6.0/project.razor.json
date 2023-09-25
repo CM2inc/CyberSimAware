@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
+  "FilePath": "/Users/djcpu/Downloads/CyberSimAware/CyberSimAware.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,95 +16295,95 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "NftTracker",
+  "RootNamespace": "CyberSimAware",
   "Documents": [
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/_ViewImports.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/Home/About.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Home/About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/Shared/_Layout.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/Nft/Details.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Nft/Details.cshtml",
       "TargetPath": "Views\\Nft\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Category/Delete.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Category/Delete.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Shared/_AdminLayout.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Shared/_AdminLayout.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/Home/Index.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/Home/AboutMe.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Home/AboutMe.cshtml",
       "TargetPath": "Views\\Home\\AboutMe.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/Nft/List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Nft/List.cshtml",
       "TargetPath": "Views\\Nft\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Category/AddUpdate.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Category/AddUpdate.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Category\\AddUpdate.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Nft/List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Nft/List.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Nft\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Category/List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Category/List.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Category\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/_ViewStart.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/_ViewStart.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Nft/AddUpdate.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Nft/AddUpdate.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Nft\\AddUpdate.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/_ViewImports.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/_ViewImports.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Nft/Delete.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Nft/Delete.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Nft\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Areas/Admin/Views/Home/Index.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Home/Index.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/NftTracker/Views/_ViewStart.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }

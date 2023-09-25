@@ -3,7 +3,7 @@ using System;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Collections.Generic;
 
-namespace NftTracker.Models
+namespace CyberSimAware.Models
 {
     public class NftListViewModel
     {

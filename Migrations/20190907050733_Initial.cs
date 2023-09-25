@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace NftTracker.Migrations
+namespace CyberSimAware.Migrations
 {
     public partial class Initial : Migration
     {

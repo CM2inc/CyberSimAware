@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace NftTracker.Controllers
+namespace CyberSimAware.Controllers
 {
     public class HomeController : Controller
     {

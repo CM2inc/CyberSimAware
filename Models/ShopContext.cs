@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace NftTracker.Models
+namespace CyberSimAware.Models
 {
     public class ShopContext : DbContext
     {

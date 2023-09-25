@@ -9923,11 +9923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
-      "projectName": "NftTracker",
-      "projectPath": "/Users/djcpu/Downloads/NftTracker/NftTracker.csproj",
+      "projectUniqueName": "/Users/djcpu/CyberSimAware/CyberSimAware/CyberSimAware.csproj",
+      "projectName": "CyberSimAware",
+      "projectPath": "/Users/djcpu/CyberSimAware/CyberSimAware/CyberSimAware.csproj",
       "packagesPath": "/Users/djcpu/.nuget/packages/",
-      "outputPath": "/Users/djcpu/Downloads/NftTracker/obj/",
+      "outputPath": "/Users/djcpu/CyberSimAware/CyberSimAware/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/djcpu/.nuget/NuGet/NuGet.Config"

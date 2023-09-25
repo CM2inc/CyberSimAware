@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace NftTracker.Models
+namespace CyberSimAware.Models
 {
     public class Nft
     {

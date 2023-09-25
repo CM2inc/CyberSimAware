@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NftTracker.Models;
+using CyberSimAware.Models;
 
-namespace NftTracker.Controllers
+namespace CyberSimAware.Controllers
 {
     public class NftController : Controller
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace NftTracker.Areas.Admin.Controllers
+namespace CyberSimAware.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class HomeController : Controller
