@@ -4,7 +4,7 @@
   "FilePath": "/Users/djcpu/CyberSimAware/CyberSimAware/NftTracker.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
-    "LanguageVersion": "6.0"
+    "LanguageVersion": "8.0"
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
@@ -23683,7 +23683,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "NftTracker",
+  "RootNamespace": "ASP",
   "Documents": [
     {
       "FilePath": "/Users/djcpu/CyberSimAware/CyberSimAware/Areas/Admin/Views/Category/AddUpdate.cshtml",
