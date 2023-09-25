@@ -21,10 +21,10 @@ namespace CyberSimAware.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Nfts",
+                name: "Sims",
                 columns: table => new
                 {
-                    NftID = table.Column<int>(nullable: false)
+                    SimID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     CategoryID = table.Column<int>(nullable: false),
                     Code = table.Column<string>(nullable: false),
@@ -33,9 +33,9 @@ namespace CyberSimAware.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Nfts", x => x.NftID);
+                    table.PrimaryKey("PK_Sims", x => x.SimID);
                     table.ForeignKey(
-                        name: "FK_Nfts_Categories_CategoryID",
+                        name: "FK_Sims_Categories_CategoryID",
                         column: x => x.CategoryID,
                         principalTable: "Categories",
                         principalColumn: "CategoryID",
@@ -58,8 +58,8 @@ namespace CyberSimAware.Migrations
                 values: new object[] { 3, "CloneX" });
 
             migrationBuilder.InsertData(
-                table: "Nfts",
-                columns: new[] { "NftID", "CategoryID", "Code", "Name", "Price" },
+                table: "Sims",
+                columns: new[] { "SimID", "CategoryID", "Code", "Name", "Price" },
                 values: new object[,]
                 {
                     { 1, 1, "1190", "CryptoPunk #1190", 516796.00m },
@@ -74,15 +74,15 @@ namespace CyberSimAware.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Nfts_CategoryID",
-                table: "Nfts",
+                name: "IX_Sims_CategoryID",
+                table: "Sims",
                 column: "CategoryID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Nfts");
+                name: "Sims");
 
             migrationBuilder.DropTable(
                 name: "Categories");

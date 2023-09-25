@@ -3,23 +3,23 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CyberSimAware.Models
 {
-    public class Nft
+    public class Sim
     {
         // EF will instruct the database to automatically generate this value
-        public int NftID { get; set; }
+        public int SimID { get; set; }
 
         [Required(ErrorMessage = "Please select a category.")]
         public int CategoryID { get; set; }  // foreign key property
 
         public Category Category { get; set; }
 
-        [Required(ErrorMessage = "Please enter a nft code.")]
+        [Required(ErrorMessage = "Please enter a sim code.")]
         public string Code { get; set; }
 
-        [Required(ErrorMessage = "Please enter a nft name.")]
+        [Required(ErrorMessage = "Please enter a sim name.")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please enter a nft price.")]
+        [Required(ErrorMessage = "Please enter a sim price.")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 

@@ -9,7 +9,7 @@
 
 namespace System.Reflection
 {
-    internal class AssemblyNftAttribute : Attribute
+    internal class AssemblySimAttribute : Attribute
     {
     }
 }

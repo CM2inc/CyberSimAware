@@ -1,7 +1,7 @@
 ﻿@*Cepada Morgan List/Razor view*@
-@model NftListViewModel
+@model SimListViewModel
 @{
-    ViewBag.Title = "Nft Manager";
+    ViewBag.Title = "Sim Manager";
 }
 
 <h1>@ViewBag.Title</h1>
@@ -34,18 +34,18 @@
                     <th></th>
             </thead>
             <tbody>
-                @foreach (var p in Model.Nfts)
+                @foreach (var p in Model.Sims)
                 {
                     <tr>
                         <td>@p.Name</td>
                         <td>@p.Price.ToString("C")</td>
                         <td>
                             <a asp-action="Update"
-                               asp-route-id="@p.NftID">Update</a>
+                               asp-route-id="@p.SimID">Update</a>
                         </td>
                         <td>
                             <a asp-action="Delete"
-                               asp-route-id="@p.NftID">Delete</a>
+                               asp-route-id="@p.SimID">Delete</a>
                         </td>
                     </tr>
                 }
@@ -58,6 +58,6 @@
             <div class="text-success">@userMessage</div>
         }
 
-        <a asp-action="Add" class="btn btn-primary">Add New NFT</a>
+        <a asp-action="Add" class="btn btn-primary">Add New SIM</a>
     </div>
 </div>

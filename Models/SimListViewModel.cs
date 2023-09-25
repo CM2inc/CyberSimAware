@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace CyberSimAware.Models
 {
-    public class NftListViewModel
+    public class SimListViewModel
     {
             public List<Category> Categories { get; set; }
-            public List<Nft> Nfts { get; set; }
+            public List<Sim> Sims { get; set; }
             public string SelectedCategory { get; set; }
             public string CheckActiveCategory(string category) =>
                 category == SelectedCategory ? "active" : "";

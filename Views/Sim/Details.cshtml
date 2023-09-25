@@ -1,9 +1,9 @@
-﻿@model Nft
+﻿@model Sim
 @{
-    ViewBag.Title = "Nft Details";
+    ViewBag.Title = "Sim Details";
 }
 
-<h1>NFT Details</h1>
+<h1>SIM Details</h1>
 <div class="row">
     <div class="col-sm-4">
         <img src="~/images/@ViewBag.ImageFilename" 
@@ -15,7 +15,7 @@
         <h2>@Model.Name</h2>
         <table class="table table-bordered table-striped">
             <tr>
-                <td>Price of NFT:</td>
+                <td>Price of SIM:</td>
                 <td>@Model.Price.ToString("C")</td>
             </tr>
         </table>

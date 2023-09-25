@@ -7,12 +7,12 @@ using CyberSimAware.Models;
 namespace CyberSimAware.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class NftController : Controller
+    public class SimController : Controller
     {
         private ShopContext context;
         private List<Category> categories;
 
-        public NftController(ShopContext ctx)
+        public SimController(ShopContext ctx)
         {
             context = ctx;
             categories = context.Categories
@@ -28,17 +28,17 @@ namespace CyberSimAware.Areas.Admin.Controllers
         [Route("[area]/[controller]s/{id?}")]
         public IActionResult List(string id = "All")
         {
-            List<Nft> nfts;
+            List<Sim> sims;
             if (id == "All")
             {
-                nfts = context.Nfts
-                    .OrderBy(p => p.NftID).ToList();
+                sims = context.Sims
+                    .OrderBy(p => p.SimID).ToList();
             }
             else
             {
-                nfts = context.Nfts
+                sims = context.Sims
                     .Where(p => p.Category.Name == id)
-                    .OrderBy(p => p.NftID).ToList();
+                    .OrderBy(p => p.SimID).ToList();
             }
 
             /*
@@ -48,63 +48,63 @@ namespace CyberSimAware.Areas.Admin.Controllers
             */
 
             //~~populated the view model
-            var model = new NftListViewModel
+            var model = new SimListViewModel
             {
                 Categories = categories,
-                Nfts = nfts,
+                Sims = sims,
                 SelectedCategory = id
             };
 
-            // bind nfts to view
+            // bind sims to view
             return View(model);
         }
 
         [HttpGet]
         public IActionResult Add()
         {
-            // create new Nft object
-            Nft nft = new Nft();                // create Nft object
-            nft.Category = context.Categories.Find(1);  // add Category object - prevents validation problem
+            // create new Sim object
+            Sim sim = new Sim();                // create Sim object
+            sim.Category = context.Categories.Find(1);  // add Category object - prevents validation problem
 
             // use ViewBag to pass action and category data to view
             ViewBag.Action = "Add";
             ViewBag.Categories = categories;
 
-            // bind nft to AddUpdate view
-            return View("AddUpdate", nft);
+            // bind sim to AddUpdate view
+            return View("AddUpdate", sim);
         }
 
         [HttpGet]
         public IActionResult Update(int id)
         {
-            // get Nft object for specified primary key
-            Nft nft = context.Nfts
+            // get Sim object for specified primary key
+            Sim sim = context.Sims
                 .Include(p => p.Category)
-                .FirstOrDefault(p => p.NftID == id);
+                .FirstOrDefault(p => p.SimID == id);
 
             // use ViewBag to pass action and category data to view
             ViewBag.Action = "Update";
             ViewBag.Categories = categories;
 
-            // bind nft to AddUpdate view
-            return View("AddUpdate", nft);
+            // bind sim to AddUpdate view
+            return View("AddUpdate", sim);
         }
 
         [HttpPost]
-        public IActionResult Update(Nft nft)
+        public IActionResult Update(Sim sim)
         {
             if (ModelState.IsValid)
             {
-                if (nft.NftID == 0)           // new nft
+                if (sim.SimID == 0)           // new sim
                 {
-                    context.Nfts.Add(nft);
-                    TempData["UserMessage"] = "you just added the nft " + nft.Name;
-                    //TempData["you just added the project " + nft] = "UserMessage";
+                    context.Sims.Add(sim);
+                    TempData["UserMessage"] = "you just added the sim " + sim.Name;
+                    //TempData["you just added the project " + sim] = "UserMessage";
                 }
-                else                                  // existing nft
+                else                                  // existing sim
                 {
-                    context.Nfts.Update(nft);
-                    TempData["UserMessage"] = "you just updated the nft " + nft.Name;
+                    context.Sims.Update(sim);
+                    TempData["UserMessage"] = "you just updated the sim " + sim.Name;
                 }
                 context.SaveChanges();
                 return RedirectToAction("List");
@@ -113,22 +113,22 @@ namespace CyberSimAware.Areas.Admin.Controllers
             {
                 ViewBag.Action = "Save";
                 ViewBag.Categories = categories;
-                return View("AddUpdate", nft);
+                return View("AddUpdate", sim);
             }
         }
 
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            Nft nft = context.Nfts
-                .FirstOrDefault(p => p.NftID == id);
-            return View(nft);
+            Sim sim = context.Sims
+                .FirstOrDefault(p => p.SimID == id);
+            return View(sim);
         }
 
         [HttpPost]
-        public IActionResult Delete(Nft nft)
+        public IActionResult Delete(Sim sim)
         {
-            context.Nfts.Remove(nft);
+            context.Sims.Remove(sim);
             context.SaveChanges();
             return RedirectToAction("List");
         }

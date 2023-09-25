@@ -16313,8 +16313,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Nft/Details.cshtml",
-      "TargetPath": "Views\\Nft\\Details.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Sim/Details.cshtml",
+      "TargetPath": "Views\\Sim\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16338,8 +16338,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Nft/List.cshtml",
-      "TargetPath": "Views\\Nft\\List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Views/Sim/List.cshtml",
+      "TargetPath": "Views\\Sim\\List.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16348,8 +16348,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Nft/List.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Nft\\List.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Sim/List.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Sim\\List.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16363,8 +16363,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Nft/AddUpdate.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Nft\\AddUpdate.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Sim/AddUpdate.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Sim\\AddUpdate.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16373,8 +16373,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Nft/Delete.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Nft\\Delete.cshtml",
+      "FilePath": "/Users/djcpu/Downloads/CyberSimAware/Areas/Admin/Views/Sim/Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Sim\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1296,13 +1296,13 @@ $.validator.addMethod( "postcodeUK", function( value, element ) {
  *
  * The end result is that neither of these inputs:
  *
- *	<input class="nftinfo" name="partnumber">
- *	<input class="nftinfo" name="description">
+ *	<input class="siminfo" name="partnumber">
+ *	<input class="siminfo" name="description">
  *
  *	...will validate unless at least one of them is filled.
  *
- * partnumber:	{require_from_group: [1,".nftinfo"]},
- * description: {require_from_group: [1,".nftinfo"]}
+ * partnumber:	{require_from_group: [1,".siminfo"]},
+ * description: {require_from_group: [1,".siminfo"]}
  *
  * options[0]: number of fields that must be filled in the group
  * options[1]: CSS selector that defines the group of conditionally required fields
@@ -1335,16 +1335,16 @@ $.validator.addMethod( "require_from_group", function( value, element, options )
  *
  * The end result, is that none of these inputs:
  *
- *	<input class="nftinfo" name="partnumber">
- *	<input class="nftinfo" name="description">
- *	<input class="nftinfo" name="color">
+ *	<input class="siminfo" name="partnumber">
+ *	<input class="siminfo" name="description">
+ *	<input class="siminfo" name="color">
  *
  *	...will validate unless either at least two of them are filled,
  *	OR none of them are.
  *
- * partnumber:	{skip_or_fill_minimum: [2,".nftinfo"]},
- * description: {skip_or_fill_minimum: [2,".nftinfo"]},
- * color:		{skip_or_fill_minimum: [2,".nftinfo"]}
+ * partnumber:	{skip_or_fill_minimum: [2,".siminfo"]},
+ * description: {skip_or_fill_minimum: [2,".siminfo"]},
+ * color:		{skip_or_fill_minimum: [2,".siminfo"]}
  *
  * options[0]: number of fields that must be filled in the group
  * options[1]: CSS selector that defines the group of conditionally required fields

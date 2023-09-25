@@ -5,18 +5,18 @@ using CyberSimAware.Models;
 
 namespace CyberSimAware.Controllers
 {
-    public class NftController : Controller
+    public class SimController : Controller
     {
         private ShopContext context;
 
-        public NftController(ShopContext ctx)
+        public SimController(ShopContext ctx)
         {
             context = ctx;
         }
 
         public IActionResult Index()
         {
-            return RedirectToAction("List", "Nft");
+            return RedirectToAction("List", "Sim");
         }
 
         [Route("[controller]s/{id?}")]
@@ -25,17 +25,17 @@ namespace CyberSimAware.Controllers
             var categories = context.Categories
                 .OrderBy(c => c.CategoryID).ToList();
 
-            List<Nft> nfts;
+            List<Sim> sims;
             if (id == "All")
             {
-                nfts = context.Nfts
-                    .OrderBy(p => p.NftID).ToList();
+                sims = context.Sims
+                    .OrderBy(p => p.SimID).ToList();
             }
             else
             {
-                nfts = context.Nfts
+                sims = context.Sims
                     .Where(p => p.Category.Name == id)
-                    .OrderBy(p => p.NftID).ToList();
+                    .OrderBy(p => p.SimID).ToList();
             }
 
             // use ViewBag to pass data to view
@@ -45,14 +45,14 @@ namespace CyberSimAware.Controllers
             */
 
             //~~populated the view model
-            var model = new NftListViewModel
+            var model = new SimListViewModel
             {
                 Categories = categories,
-                Nfts = nfts,
+                Sims = sims,
                 SelectedCategory = id
             };
 
-            // bind nfts to view
+            // bind sims to view
             return View(model);
         }
 
@@ -61,16 +61,16 @@ namespace CyberSimAware.Controllers
             var categories = context.Categories
                 .OrderBy(c => c.CategoryID).ToList();
 
-            Nft nft = context.Nfts.Find(id);
+            Sim sim = context.Sims.Find(id);
 
-            string imageFilename = nft.Code + "s.png";
+            string imageFilename = sim.Code + "s.png";
 
             // use ViewBag to pass data to view
             ViewBag.Categories = categories;
             ViewBag.ImageFilename = imageFilename;
 
-            // bind nft to view
-            return View(nft);
+            // bind sim to view
+            return View(sim);
         }
     }
 }
