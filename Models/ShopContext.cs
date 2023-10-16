@@ -18,17 +18,18 @@ namespace CyberSimAware.Models
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Category>().HasData(
-                new Category { CategoryID = 1, Name = "Crypto Punks" },
-                new Category { CategoryID = 2, Name = "Bored Apes" },
-                new Category { CategoryID = 3, Name = "CloneX" }
+                new Category { CategoryID = 1, Name = "Ransomware" },
+                new Category { CategoryID = 2, Name = "Phishing" },
+                new Category { CategoryID = 3, Name = "Social Engineering" }
             );
 
             modelBuilder.Entity<Sim>().HasData(
+                //Ransomware Category Lifecycle Sims
                 new Sim
                 {
                     SimID = 1, 
                     CategoryID = 1,
-                    Code = "1190",
+                    Code = "1",
                     Name = "CryptoPunk #1190",
                     Price = (decimal)516796.00
                 },
@@ -36,7 +37,7 @@ namespace CyberSimAware.Models
                 {
                     SimID = 2,
                     CategoryID = 1,
-                    Code = "5217",
+                    Code = "2",
                     Name = "CryptoPunk #5217",
                     Price = (decimal)2906977.50
                 },
@@ -44,10 +45,11 @@ namespace CyberSimAware.Models
                 {
                     SimID = 3,
                     CategoryID = 1,
-                    Code = "7804",
+                    Code = "3",
                     Name = "CryptoPunk #7804",
                     Price = (decimal)5426358.00
                 },
+                //Phising Category 
                 new Sim
                 {
                     SimID = 4,
@@ -72,6 +74,7 @@ namespace CyberSimAware.Models
                     Name = "#2488",
                     Price = (decimal)245077.58
                 },
+                //Social Engineering
                 new Sim
                 {
                     SimID = 7,
