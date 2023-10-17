@@ -29,7 +29,7 @@ namespace CyberSimAware.Migrations
                     CategoryID = table.Column<int>(nullable: false),
                     Code = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Abstract = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -45,32 +45,33 @@ namespace CyberSimAware.Migrations
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { 1, "Crypto Punks" });
+                values: new object[] { 1, "Ransomware" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { 2, "Bored Apes" });
+                values: new object[] { 2, "Phishing" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryID", "Name" },
-                values: new object[] { 3, "CloneX" });
+                values: new object[] { 3, "Social Engineering" });
 
             migrationBuilder.InsertData(
                 table: "Sims",
-                columns: new[] { "SimID", "CategoryID", "Code", "Name", "Price" },
+                columns: new[] { "SimID", "CategoryID", "Code", "Name", "Abstract" },
                 values: new object[,]
+                //Hardcoded in values for the lifecycles
                 {
-                    { 1, 1, "1190", "CryptoPunk #1190", 516796.00m },
-                    { 2, 1, "5217", "CryptoPunk #5217", 2906977.50m },
-                    { 3, 1, "7804", "CryptoPunk #7804", 5426358.00m },
-                    { 4, 2, "550", "#550", 239018.15m },
-                    { 5, 2, "3439", "#3439", 1936693.01m },
-                    { 6, 2, "2488", "#2488", 245077.58m },
-                    { 7, 3, "5549", "CloneX #5549", 43062.03m },
-                    { 8, 3, "1677", "CloneX #1677", 63307.51m },
-                    { 9, 3, "14433", "CloneX #14433", 178294.62m },
+                    { 1, 1, "1", "CryptoPunk #1190", "" },
+                    { 2, 1, "2", "CryptoPunk #5217", "" },
+                    { 3, 1, "3", "CryptoPunk #7804", "" },
+                    { 4, 2, "4", "#550", "" },
+                    { 5, 2, "5", "#3439", "" },
+                    { 6, 2, "6", "#2488", "" },
+                    { 7, 3, "7", "CloneX #5549", "" },
+                    { 8, 3, "8", "CloneX #1677", "" },
+                    { 9, 3, "9", "CloneX #14433", "" },
                 });
 
             migrationBuilder.CreateIndex(

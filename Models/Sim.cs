@@ -19,9 +19,8 @@ namespace CyberSimAware.Models
         [Required(ErrorMessage = "Please enter a sim name.")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please enter a sim price.")]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
+        [Required(ErrorMessage = "Please enter a sim abstract.")]
+        public string Abstract { get; set; }
 
         public string Slug {
             get {

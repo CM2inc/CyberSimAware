@@ -31,7 +31,7 @@ namespace CyberSimAware.Models
                     CategoryID = 1,
                     Code = "1",
                     Name = "CryptoPunk #1190",
-                    Price = (decimal)516796.00
+                    Abstract = ""
                 },
                 new Sim
                 {
@@ -39,7 +39,7 @@ namespace CyberSimAware.Models
                     CategoryID = 1,
                     Code = "2",
                     Name = "CryptoPunk #5217",
-                    Price = (decimal)2906977.50
+                    Abstract = ""
                 },
                 new Sim
                 {
@@ -47,7 +47,7 @@ namespace CyberSimAware.Models
                     CategoryID = 1,
                     Code = "3",
                     Name = "CryptoPunk #7804",
-                    Price = (decimal)5426358.00
+                    Abstract = ""
                 },
                 //Phising Category 
                 new Sim
@@ -56,7 +56,7 @@ namespace CyberSimAware.Models
                     CategoryID = 2,
                     Code = "550",
                     Name = "#550",
-                    Price = (decimal)239018.15
+                    Abstract = ""
                 },
                 new Sim
                 {
@@ -64,7 +64,7 @@ namespace CyberSimAware.Models
                     CategoryID = 2,
                     Code = "3439",
                     Name = "#3439",
-                    Price = (decimal)1936693.01
+                    Abstract = ""
                 },
                 new Sim
                 {
@@ -72,7 +72,7 @@ namespace CyberSimAware.Models
                     CategoryID = 2,
                     Code = "2488",
                     Name = "#2488",
-                    Price = (decimal)245077.58
+                    Abstract = ""
                 },
                 //Social Engineering
                 new Sim
@@ -81,7 +81,7 @@ namespace CyberSimAware.Models
                     CategoryID = 3,
                     Code = "5549",
                     Name = "CloneX #5549",
-                    Price = (decimal)43062.03
+                    Abstract = ""
                 },
                 new Sim
                 {
@@ -89,7 +89,7 @@ namespace CyberSimAware.Models
                     CategoryID = 3,
                     Code = "1677",
                     Name = "CloneX #1677",
-                    Price = (decimal)63307.51
+                    Abstract = ""
                 },
                 new Sim
                 {
@@ -97,7 +97,7 @@ namespace CyberSimAware.Models
                     CategoryID = 3,
                     Code = "14433",
                     Name = "CloneX #14433",
-                    Price = (decimal)178294.62
+                    Abstract = ""
                 }
             );
         }
