@@ -29,7 +29,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Price</th>
+                    <th>Abstract</th>
                     <th></th>
                     <th></th>
             </thead>
@@ -38,7 +38,7 @@
                 {
                     <tr>
                         <td>@p.Name</td>
-                        <td>@p.Price.ToString("C")</td>
+                        <td>@p.Abstract</td>
                         <td>
                             <a asp-action="Update"
                                asp-route-id="@p.SimID">Update</a>
