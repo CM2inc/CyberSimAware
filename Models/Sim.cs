@@ -22,6 +22,9 @@ namespace CyberSimAware.Models
         [Required(ErrorMessage = "Please enter a sim abstract.")]
         public string Abstract { get; set; }
 
+        [Required(ErrorMessage = "Please enter the sims information.")]
+        public string Info { get; set; }
+
         public string Slug {
             get {
                 if (Name == null)
