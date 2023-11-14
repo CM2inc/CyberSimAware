@@ -52,30 +52,67 @@ namespace CyberSimAware.Models
                     Abstract = "Analyzing a security ecosystem at the holistic level to find malicious users",
                     Info = " ~ What is Threat Detection? - Threat Detection is the process of analyzing a security ecosystem at the holistic level to find malicious users, abnormal activity and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational (CrowdStrike, 2023). - Analysis and Detection services ensure an agency's or division's information security program is fully implemented and maintained (CISA, 2023). ~ Threat Modeling Methods & MITRE Attack Frameworks. - Plan a Cyber Security Strategy: Use ATT&CK to plan your cyber security strategy. Build your defenses to counter the techniques known to be used against your type of organization and equip yourself with security monitoring to detect evidence of ATT&CK techniques in your network. - Run Adversary Emulation Plans: Use ATT&CK for Adversary Emulation Plans to improve Red team performance. Red teams can develop and deploy a consistent and highly organized approach to defining the tactics and techniques of specific threats, then logically assess their environment to see if the defenses work as expected. - Identify Gaps in Defenses: ATT&CK matrices can help Blue teams better understand the components of a potential or ongoing cyber-attack to identify gaps in defenses and implement solutions for those gaps. ATT&CK documents suggested remediations and compensating controls for the techniques to which you are more prone. - Integrate Threat Intelligence: ATT&CK can effectively integrate your threat intelligence into cyber defense operations. Threats can be mapped to specific attacker techniques to understand if gaps exist, determine risk, and develop an implementation plan to address them. ~ Essential Components of (TDR). - Full Attack Vector Visibility: Effective threat detection requires full visibility into all attack vectors, including the network, email, cloud-based applications, mobile apps, and more. Detecting malware is becoming increasingly difficult as malware becomes more sophisticated and evasive. - High Detection Accuracy: Security Operations Center (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. After a potential threat has been identified, security analysts need tools that support incident investigation and remediation. - MITRE Attack Analysis: The MITRE Attack framework provides a wealth of information about the methods by which an attacker can carry out various stages in a cyberattack. Threat detection and response Solutions should provide mappings to MITRE ATT&CK techniques so that security teams can leverage the associated detection and mitigation recommendations provided by the framework. ~ Effective Threat Detection & Response. - Reduce Attack Dwell Time: the longer that an attacker has access to an organization’s systems, the more damage that they can cause. Rapid threat detection reduces dwell time and the complexity of incident remediation. - Decrease cost of Incident Response: An attacker with extended access to an organization’s systems is much more difficult to dislodge and can cause more damage. The sooner that a threat is detected, the lower the cost of remediation. - Optimizing SOC operations: Many SOCs are overwhelmed by low-quality data, resulting in alert fatigue and missed threat detections. An effective TDR solution enables a SOC to focus its efforts on true threats rather than wasting time on false positives."
                 },
+                new Sim
+                {
+                   SimID = 4,
+                   CategoryID = 1,
+                   Code = "4",
+                   Name = "Ransomware Post-Incident Recovery",
+                   Abstract = "Methods for recovering from a ransomware attack",
+                   Info = "The fastest and easiest method of recovering from a ransomware attack is to restore from known good backups. The fastest and easiest method of recovering from a ransomware attack is to restore from known good backups. However, the root cause of the attack needs to be addressed along with simply replacing the damaged file. 1) All systems being deployed need to be fully patched before redeployment. Take care not to re-infect clean systems during recovery. For example, if a new Virtual Local Area Network (VLAN) has been created for recovery purposes, ensure only clean systems are added. 2) Systems should be hardened to an industry standard to minimize initial attack surfaces and limit the chances of weak or default configurations making it to production. 3) Before deployment, the systems must be scanned for vulnerabilities. 4) Ensure that your backup process has been improved to include ransomware resistance. 5) Ensure that gaps where there was failure of endpoint protection have been closed or mitigated before redeploying systems. 6) Document lessons learned from the incident and associated response activities to inform updates to—and refine—organizational policies, plans, and procedures and guide future exercises of the same. 7) Let any affected person(s) know what happened and what, if anything, they need to do. The wording should be such to have a minimal chance of causing panic in anyone. 8) Consider sharing lessons learned and relevant indicators of compromise with CISA or your sector ISAC to benefit others within the community."
+               },
+               new Sim
+               {
+                   SimID = 5,
+                   CategoryID = 1,
+                   Code = "5",
+                   Name = "Ransomware Scenario 1",
+                   Abstract = "Example Ransomware Scenario",
+                   Info = "~ Incident: At 10:00 AM on a regular workday, multiple employees at Swift Solutions report unusual pop-up messages appearing on their computers, indicating that their files have been encrypted. Simultaneously, the company's internal communication platform experiences disruptions. ~ Initial Investigation: The IT team quickly identifies this as a ransomware attack and determines that the malware has entered the network through a phishing email that an employee unwittingly opened and clicked on a link. ~ Ransom Demand: Shortly after the attack, the company receives an anonymous message demanding a significant sum of 350 Bitcoin ($12,349,050.00) in exchange for the decryption keys. The attackers threaten to leak sensitive company data if the ransom is not paid within a specified timeframe."
+               },
+               new Sim
+               {
+                   SimID = 6,
+                   CategoryID = 1,
+                   Code = "6",
+                   Name = "Ransomware Scenario 2",
+                   Abstract = "Example Ransomware Scenario",
+                   Info = "~ Incident: Following a recent layoff, a terminated employee (let's call them 'Alex') from a mid-sized financial services firm, 'Horizon Finance,' who had extensive knowledge of the company's systems and data, launches a ransomware attack on the organization's network. ~ Attack Execution: Using previously obtained login credentials and unauthorized access, Alex remotely infiltrates the company's network infrastructure. Using malware that was planted before departure, they trigger a ransomware attack during the weekend, aiming to encrypt sensitive data and disrupt the company's operations. ~ Ransom Demand: The ransom note doesn’t directly identify the perpetrator but indicates that sensitive financial and client data will be exposed unless a significant ransom is paid in cryptocurrency within a specific timeframe. ~ Impacted Systems: The attack successfully encrypts critical financial databases, client records, and internal communication systems. This causes a halt in daily operations, hindering access to crucial data required for ongoing financial transactions."
+               },
+               new Sim
+               {
+                   SimID = 7,
+                   CategoryID = 1,
+                   Code = "7",
+                   Name = "Ransomware Scenario 3",
+                   Abstract = "Example Ransomware Scenario",
+                   Info = "~ Incident: A large retail corporation, 'TechMart,' experiences a ransomware attack due to an unpatched and vulnerable point-of-sale (POS) system. The attack occurs during a busy holiday shopping weekend. ~ Attack Execution: Cybercriminals exploit a known vulnerability in the POS system software that wasn’t updated with the latest security patches. Through this vulnerability, they inject ransomware into the system, causing a widespread encryption of customer transaction data, inventory records, and payment processing systems. ~ Ransom Demand: The attackers demand a substantial ransom in cryptocurrency within a short time frame in exchange for the decryption keys. They threaten to expose the compromised customer data if the demands are not met. ~ Impacted Systems: The attack disrupts the point-of-sale terminals, halting transactions during a critical shopping period. This affects the entire supply chain, from inventory management to customer payment processing, potentially causing financial loss and reputational damage."
+               },
+
                 //Phising Category 
                 new Sim
                 {
-                    SimID = 4,
+                    SimID = 201,
                     CategoryID = 2,
-                    Code = "550",
+                    Code = "201",
                     Name = "#550",
                     Abstract = "",
                     Info = ""
                 },
                 new Sim
                 {
-                    SimID = 5,
+                    SimID = 202,
                     CategoryID = 2,
-                    Code = "3439",
+                    Code = "202",
                     Name = "#3439",
                     Abstract = "",
                     Info = ""
                 },
                 new Sim
                 {
-                    SimID = 6,
+                    SimID = 203,
                     CategoryID = 2,
-                    Code = "2488",
+                    Code = "203",
                     Name = "#2488",
                     Abstract = "",
                     Info = ""
@@ -83,27 +120,27 @@ namespace CyberSimAware.Models
                 //Social Engineering
                 new Sim
                 {
-                    SimID = 7,
+                    SimID = 301,
                     CategoryID = 3,
-                    Code = "5549",
+                    Code = "301",
                     Name = "CloneX #5549",
                     Abstract = "",
                     Info = ""
                 },
                 new Sim
                 {
-                    SimID = 8,
+                    SimID = 302,
                     CategoryID = 3,
-                    Code = "1677",
+                    Code = "302",
                     Name = "CloneX #1677",
                     Abstract = "",
                     Info = ""
                 },
                 new Sim
                 {
-                    SimID = 9,
+                    SimID = 303,
                     CategoryID = 3,
-                    Code = "14433",
+                    Code = "303",
                     Name = "CloneX #14433",
                     Abstract = "",
                     Info = ""
