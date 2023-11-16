@@ -89,13 +89,13 @@ namespace CyberSimAware.Models
                    Info = "~ Incident: A large retail corporation, 'TechMart,' experiences a ransomware attack due to an unpatched and vulnerable point-of-sale (POS) system. The attack occurs during a busy holiday shopping weekend. ~ Attack Execution: Cybercriminals exploit a known vulnerability in the POS system software that wasn’t updated with the latest security patches. Through this vulnerability, they inject ransomware into the system, causing a widespread encryption of customer transaction data, inventory records, and payment processing systems. ~ Ransom Demand: The attackers demand a substantial ransom in cryptocurrency within a short time frame in exchange for the decryption keys. They threaten to expose the compromised customer data if the demands are not met. ~ Impacted Systems: The attack disrupts the point-of-sale terminals, halting transactions during a critical shopping period. This affects the entire supply chain, from inventory management to customer payment processing, potentially causing financial loss and reputational damage."
                },
 
-                //Phising Category 
+                //Phishing Category 
                 new Sim
                 {
                     SimID = 201,
                     CategoryID = 2,
                     Code = "201",
-                    Name = "#550",
+                    Name = "Phishing 1",
                     Abstract = "",
                     Info = ""
                 },
@@ -104,7 +104,7 @@ namespace CyberSimAware.Models
                     SimID = 202,
                     CategoryID = 2,
                     Code = "202",
-                    Name = "#3439",
+                    Name = "Phishing 2",
                     Abstract = "",
                     Info = ""
                 },
@@ -113,7 +113,7 @@ namespace CyberSimAware.Models
                     SimID = 203,
                     CategoryID = 2,
                     Code = "203",
-                    Name = "#2488",
+                    Name = "Phishing 3",
                     Abstract = "",
                     Info = ""
                 },
@@ -123,7 +123,7 @@ namespace CyberSimAware.Models
                     SimID = 301,
                     CategoryID = 3,
                     Code = "301",
-                    Name = "CloneX #5549",
+                    Name = "Social Engineering 1",
                     Abstract = "",
                     Info = ""
                 },
@@ -132,7 +132,7 @@ namespace CyberSimAware.Models
                     SimID = 302,
                     CategoryID = 3,
                     Code = "302",
-                    Name = "CloneX #1677",
+                    Name = "Social Engineering 2",
                     Abstract = "",
                     Info = ""
                 },
@@ -141,7 +141,7 @@ namespace CyberSimAware.Models
                     SimID = 303,
                     CategoryID = 3,
                     Code = "303",
-                    Name = "CloneX #14433",
+                    Name = "Social Engineering 3",
                     Abstract = "",
                     Info = ""
                 }

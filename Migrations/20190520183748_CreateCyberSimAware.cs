@@ -80,13 +80,13 @@ namespace CyberSimAware.Migrations
                     {7, 1, "7", "Ransomware Scenario 3", "Example Ransomware Scenario", "~ Incident: A large retail corporation, 'TechMart,' experiences a ransomware attack due to an unpatched and vulnerable point-of-sale (POS) system. The attack occurs during a busy holiday shopping weekend. ~ Attack Execution: Cybercriminals exploit a known vulnerability in the POS system software that wasn’t updated with the latest security patches. Through this vulnerability, they inject ransomware into the system, causing a widespread encryption of customer transaction data, inventory records, and payment processing systems. ~ Ransom Demand: The attackers demand a substantial ransom in cryptocurrency within a short time frame in exchange for the decryption keys. They threaten to expose the compromised customer data if the demands are not met. ~ Impacted Systems: The attack disrupts the point-of-sale terminals, halting transactions during a critical shopping period. This affects the entire supply chain, from inventory management to customer payment processing, potentially causing financial loss and reputational damage."},
 
                     //Phishing
-                    { 201, 2, "201", "#550", "", "" },
-                    { 202, 2, "202", "#3439", "", "" },
-                    { 203, 2, "203", "#2488", "", "" },
+                    { 201, 2, "201", "Phishing 1", "", "" },
+                    { 202, 2, "202", "Phishing 2", "", "" },
+                    { 203, 2, "203", "Phishing 3", "", "" },
                     //Social Engineering
-                    { 301, 3, "301", "CloneX #5549", "", "" },
-                    { 302, 3, "302", "CloneX #1677", "", "" },
-                    { 303, 3, "303", "CloneX #14433", "", "" },
+                    { 301, 3, "301", "Social Engineering 1", "", "" },
+                    { 302, 3, "302", "Social Engineering 2", "", "" },
+                    { 303, 3, "303", "Social Engineering 3", "", "" },
                 });
 
             migrationBuilder.CreateIndex(
